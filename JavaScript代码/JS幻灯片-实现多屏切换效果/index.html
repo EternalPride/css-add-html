@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="JS代码,{keyword},JS广告代码,JS特效代码" />
+<meta name="description" content="此代码内容为{title}，属于站长常用代码，更多{keyword}代码请访问懒人图库JS代码频道。" />
+<title>幻灯片效果</title>
+<link rel="stylesheet" type="text/css" href="css/lrtk.css" />
+<script type="text/javascript" src="js/pptBox.js"></script>
+</head>
+<body>
+<div id="xxx"  >
+     <script>
+     var box =new PPTBox();
+     box.width = 600; //宽度
+     box.height = 295;//高度
+     box.autoplayer = 3;//自动播放间隔时间
+
+     //box.add({"url":"图片地址","title":"悬浮标题","href":"链接地址"})
+     box.add({"url":"images/11.jpg","href":"http://www.baidu.com/","title":"百度"})
+     box.add({"url":"images/12.jpg","href":"http://www.qq.com/","title":"腾讯"})
+     box.add({"url":"images/13.jpg","href":"http://www.yahoo.com/","title":"雅虎"})
+     box.add({"url":"images/14.jpg","href":"http://www.sina.com/","title":"新浪"})
+     box.show();
+    </script>
+</div>
+</body>
+</html>

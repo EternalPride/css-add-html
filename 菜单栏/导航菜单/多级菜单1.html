@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>多级菜单－平行式</title>
+
+<style type="text/css">
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.menu{
+	font-size: 12px;
+	position: relative;
+	z-index: 100;
+}
+
+.menu ul{
+	list-style: none;
+}
+
+.menu li {
+	float: left;
+	position: relative;
+}
+
+.menu ul ul {
+	visibility: hidden;
+	position: absolute;
+	left: 2px;
+	top: 23px;
+}
+
+.menu table {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.menu ul li:hover ul,
+.menu ul a:hover ul{
+	visibility: visible;
+}
+
+.menu a{
+	display: block;
+	border: 1px solid #aaa;
+	background: #1B4F93;
+	padding: 2px 30px;
+	margin: 3px 1px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu a:hover{
+	background: #FCDAD5;
+	color: #BD6B09;
+	border: 1px solid #BFCAE6;
+}
+
+.menu ul ul li {
+	clear: both;
+	text-align: left;
+	font-size: 12px;
+}
+
+.menu ul ul li a{
+	display: block;
+	width: 100px;
+	height: 13px;
+	margin: 0;
+	border: 0;
+	border-bottom: 1px solid #BFCAE6;
+}
+
+.menu ul ul li a:hover{
+	border: 0;
+	background: #FCDAD5;
+	border-bottom: 1px solid #fff;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+<div class="menu">
+		<ul>
+				<li><a href="">菜单一
+						<!--[if IE 7]><!-->
+						</a>
+						<!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul>
+								<li><a href="">菜单一1</a></li>
+								<li><a href="">菜单一2</a></li>
+								<li><a href="">菜单一3</a></li>
+								<li><a href="">菜单一4</a></li>
+								<li><a href="">菜单一5</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+				</li>
+				<li><a href="">菜单二
+						<!--[if IE 7]><!-->
+						</a>
+						<!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul>
+								<li><a href="">菜单二1</a></li>
+								<li><a href="">菜单二2</a></li>
+								<li><a href="">菜单二2</a></li>								
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+				</li>
+				<li><a href="">菜单三
+						<!--[if IE 7]><!-->
+						</a>
+						<!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul>
+								<li><a href="">菜单三1</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+				</li>
+				<li><a href="">菜单四</a></li>
+				<li><a href="">菜单五</a></li>
+		</ul>
+</div>
+
+
+</body>
+</html>
